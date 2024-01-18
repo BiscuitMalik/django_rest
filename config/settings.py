@@ -56,6 +56,7 @@ SITE_ID = 1 # new
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.IsAdminUser',
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': [ # new
         'rest_framework.authentication.SessionAuthentication',
